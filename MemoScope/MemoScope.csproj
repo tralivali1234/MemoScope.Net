@@ -62,6 +62,7 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
+    <LangVersion>6</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
@@ -160,9 +161,8 @@
       <HintPath>..\packages\DockPanelSuite.2.13.0\lib\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WinFwk, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\fremag.WinFwk.1.0.4\lib\net461\WinFwk.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="WinFwk, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\fremag.WinFwk.1.0.7\lib\net461\WinFwk.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +170,7 @@
     <Compile Include="Core\Cache\ClrDumpCache.cs" />
     <Compile Include="Core\Cache\paramInstanceAddress.cs" />
     <Compile Include="Core\Cache\SqliteHelper.cs" />
+    <Compile Include="Core\ClrTypeError.cs" />
     <Compile Include="Core\Data\AddressContainerList.cs" />
     <Compile Include="Core\Data\ArrayElementsAddressContainer.cs" />
     <Compile Include="Core\Data\ClrDumpThread.cs" />
